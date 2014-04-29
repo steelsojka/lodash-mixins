@@ -18,9 +18,11 @@ module.exports = function(grunt) {
         sourceMap: true,
         sourceMapName: "dist/<%= pkg.name %>.map",
         banner: [
-          "<%= pkg.name %>.js v<%= pkg.version %> by <%= pkg.author %>",
-          "<%= pkg.repository.url %>",
-          "Licenses: <%= pkg.license %>"
+          "/**",
+          " * <%= pkg.name %>.js v<%= pkg.version %> by <%= pkg.author %>",
+          " * <%= pkg.repository.url %>",
+          " * Licenses: <%= pkg.license %>",
+          " */"
         ].join("\n")
       },
       dist: {
