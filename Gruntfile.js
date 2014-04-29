@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+  var exec = require("child_process").exec;
 
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
